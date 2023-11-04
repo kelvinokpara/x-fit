@@ -4,6 +4,9 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg }) => {
       changeBigShoeImage(imgUrl.bigShoe);
     }
   };
+  // setInterval(() => {
+  //   handleClick();
+  // }, 2000);
   return (
     <div
       className={`border-2 rounded-xl ${

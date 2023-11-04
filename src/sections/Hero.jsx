@@ -6,6 +6,11 @@ import ShoeCard from "../Components/ShoeCard";
 import { useState } from "react";
 const Hero = () => {
   const [bigShoeImg, setbigShoeImg] = useState(bigShoe1);
+  // shoes.map(() =>
+  //   setInterval(() => {
+  //     setbigShoeImg((prev) => prev);
+  //   }, 2000)
+  // );
   return (
     <section
       id="home"
