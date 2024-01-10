@@ -1,5 +1,5 @@
 import { copyrightSign } from "../assets/icons";
-import { footerLogo } from "../assets/images";
+import footerLogo from "../assets/images/logo-white.png";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {

@@ -5,7 +5,7 @@ import { offer } from "../assets/images";
 const SpecialOffer = () => {
   return (
     <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
-      <div className="flex-1">
+      <div className="flex-1" data-aos="fade-left">
         <img
           src={offer}
           alt="offer"
@@ -18,7 +18,7 @@ const SpecialOffer = () => {
       <div className="flex flex-1 flex-col">
         <h2 className=" font-palanquin text-4xl font-bold capitalize lg:max-w-lg">
           We Provide You
-          <span className="text-coral-red">Special</span> Offer
+          <span className="text-coral-red">Special</span> Offers
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
           Embark on a shopping journey that redefines your experience with

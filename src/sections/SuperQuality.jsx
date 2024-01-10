@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import Button from "../Components/Button";
 import { shoe8 } from "../assets/images";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const SuperQuality = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <section
       id="about-us"
@@ -26,7 +32,10 @@ const SuperQuality = () => {
         </div>
       </div>
       {/*  */}
-      <div className="flex-1 flex justify-center items-center">
+      <div
+        className="flex-1 flex justify-center items-center"
+        data-aos="zoom-in-left"
+      >
         <img
           src={shoe8}
           alt="shoe8"

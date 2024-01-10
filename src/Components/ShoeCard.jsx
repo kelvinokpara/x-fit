@@ -4,8 +4,11 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg }) => {
       changeBigShoeImage(imgUrl.bigShoe);
     }
   };
+  // console.log(imgUrl, "imgUrl");
   // setInterval(() => {
-  //   handleClick();
+  //   if (bigShoeImg !== imgUrl.bigShoe) {
+  //     changeBigShoeImage(imgUrl.bigShoe);
+  //   }
   // }, 2000);
   return (
     <div
@@ -15,6 +18,7 @@ const ShoeCard = ({ imgUrl, changeBigShoeImage, bigShoeImg }) => {
           : "border-transparent"
       } cursor-pointer max-sm flex-1`}
       onClick={handleClick}
+      data-aos="fade-up"
     >
       <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
         <img
