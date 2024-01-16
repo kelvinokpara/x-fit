@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
         {/*  */}
 
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">
+        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
             The New Arrival
           </span>
@@ -40,10 +40,12 @@ const Hero = () => {
         </p>
         <Button label="Shop now" iconURL={arrowRight} />
 
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-start items-start max-sm:justify-center flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div key={stat.label}>
-              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+              <p className="text-4xl max-sm:text-3xl font-palanquin font-bold">
+                {stat.value}
+              </p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {stat.label}
               </p>
